@@ -15,12 +15,13 @@ struct ContentView: View {
                     .font(.title)
                     .fontWeight(.black)
                     // Shimmer Effect
-                    .shimmer(.init(tint: .white.opacity(0.5), highlight: .white, blur: 5))
-                    .padding()
-                    .background {
-                        RoundedRectangle(cornerRadius: 15, style: .continuous)
-                            .fill(.red.gradient)
-                    }
+                    //.shimmer(.init(tint: .white.opacity(0.5), highlight: .white, blur: 5))
+                    .shimmer(.init(tint: .black.opacity(0.2), highlight: .black, blur: 5))
+                    //.padding()
+                    //.background {
+                    //    RoundedRectangle(cornerRadius: 15, style: .continuous)
+                    //        .fill(.red.gradient)
+                    //}
                 
                 HStack(spacing: 15) {
                     ForEach(["suit.heart.fill", "box.truck.badge.clock.fill",
